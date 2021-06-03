@@ -19,7 +19,7 @@ ENV ANDROID_SDK_ARCHIVE="${ANDROID_HOME}/archive"
 ENV ANDROID_STUDIO_PATH="/home/gitpod/"
 
 RUN cd "${ANDROID_STUDIO_PATH}"
-RUN wget -qO android_studio.zip https://dl.google.com/dl/android/studio/ide-zips/3.3.0.20/android-studio-ide-182.5199772-linux.zip
+RUN wget -qO android_studio.zip https://dl.google.com/android/repository/commandlinetools-linux-7302050_latest.zip
 RUN unzip android_studio.zip
 RUN rm -f android_studio.zip
 

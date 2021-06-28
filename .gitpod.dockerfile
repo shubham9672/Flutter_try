@@ -32,9 +32,7 @@ RUN rm "${ANDROID_SDK_ARCHIVE}"
 
 # Flutter
 ENV FLUTTER_HOME="/home/gitpod/flutter"
-RUN git clone https://github.com/flutter/flutter $FLUTTER_HOME
-RUN $FLUTTER_HOME/bin/flutter channel master
-RUN $FLUTTER_HOME/bin/flutter upgrade
+RUN git clone https://github.com/flutter/flutter.git $FLUTTER_HOME
 RUN $FLUTTER_HOME/bin/flutter precache
 RUN $FLUTTER_HOME/bin/flutter config --enable-web --no-analytics
 RUN yes "y" | $FLUTTER_HOME/bin/flutter doctor --android-licenses -v

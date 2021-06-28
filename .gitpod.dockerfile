@@ -14,7 +14,7 @@ USER gitpod
 # Android
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
 ENV ANDROID_HOME="/home/gitpod/.android"
-ENV ANDROID_SDK_URL="https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip"
+ENV ANDROID_SDK_URL="https://dl.google.com/dl/android/studio/ide-zips/3.3.0.20/android-studio-ide-182.5199772-linux.zip"
 ENV ANDROID_SDK_ARCHIVE="${ANDROID_HOME}/archive"
 ENV ANDROID_STUDIO_PATH="/home/gitpod/"
 

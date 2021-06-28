@@ -14,12 +14,12 @@ USER gitpod
 # Android
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
 ENV ANDROID_HOME="/home/gitpod/.android"
-ENV ANDROID_SDK_URL="https://dl.google.com/android/repository/commandlinetools-linux-7302050_latest.zip"
+ENV ANDROID_SDK_URL="https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip"
 ENV ANDROID_SDK_ARCHIVE="${ANDROID_HOME}/archive"
 ENV ANDROID_STUDIO_PATH="/home/gitpod/"
 
 RUN cd "${ANDROID_STUDIO_PATH}"
-RUN wget -qO android_studio.zip https://dl.google.com/android/repository/commandlinetools-linux-7302050_latest.zip
+RUN wget -qO android_studio.zip https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
 RUN unzip android_studio.zip
 RUN rm -f android_studio.zip
 
